@@ -1,0 +1,25 @@
+body{
+    font-family:"Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+    background-color: #56A3A6;
+    height: 650px;
+}
+.login{
+    border-radius: 9px;
+    width: 18rem;
+    height: 50px;
+    box-shadow: none;
+    background-color:#4aaeab;
+}
+.login:hover{
+    transition:0.2s;
+    background-color: rgb(4, 62, 65);
+    color: whitesmoke;
+}
+.macarte{
+    max-width: 20rem;
+    height: 500px;
+}
+.montitre{
+    font-weight: bolder;
+    font-size: larger;
+}

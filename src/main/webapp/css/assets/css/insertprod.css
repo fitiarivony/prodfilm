@@ -1,0 +1,22 @@
+body{
+    font-family:"Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+    background-image: linear-gradient(to left, #56a3a6, #4aaeab, #3eb9ad, #37c4ab, #39cea7, #2dcaa7, #1dc6a7, #00c2a7, #00aea8, #009aa4, #00869a, #25728a);    
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+.paniergourmand{
+    background-image:url("../../images/panier.jpg") ;
+    background-position: center center;
+    height:300px;
+}
+
+.event{
+    background-image:url("../../images/visite.jpg") ;
+    background-position: center center;
+    height:300px;
+}
+
+.mybody{
+    border-width: 100px;
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+">
+ 
+  <!-- Hibernate -->
+  <!-- Session Factory -->
+   
+  <bean id="myDataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+      <property name="driverClassName" value="org.postgresql.Driver"></property>
+      <property name="url" value="jdbc:postgresql://localhost:8089/framework"></property>
+      <property name="username" value="societe"></property>
+      <property name="password" value="mdp"></property>
+      <property name="validationQuery" value="SELECT 1"></property>
+  </bean>
+  
+  
+  <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
+      <property name="dataSource" ref="myDataSource"></property>
+      <property name="packagesToScan">
+          <array>
+              <value>modele</value>
+          </array>
+      </property> 
+     
+      <property name="hibernateProperties">
+        
+           <value>hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect</value>
+      </property>
+  </bean>
+  
+   <bean id="hibernate" class="dao.HibernateDAO">
+       <property name="sessionFactory" ref="sessionFactory"></property>
+   </bean>
+   
+   
+ <!-- <bean id="empService" class="service.EmpService">
+      <property name="dao" ref="hibernate"></property>
+  </bean> -->
+ 
+ 
+ <!-- Generic DAO -->
+ <!-- Connection -->
+ <!--  <bean id="genconn" class="generic.utils.Connect">
+        <property name="url" value="jdbc:postgresql://localhost:8089/framework"></property>
+      <property name="username" value="societe"></property>
+      <property name="password" value="mdp"></property>
+      <property name="uses" value="false"></property>
+  </bean> -->
+  
+  <bean id="generic" class="dao.GenericDAO">
+      <property name="datasource" ref="myDataSource"></property>
+  </bean>
+  
+ <!-- <bean id="baseService" class="service.BaseService">
+      <property name="dao" ref="generic"></property>
+  </bean>
+  -->
+  
+  
+  
+  
+  
+  
+</beans>

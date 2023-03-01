@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #404040;
+}
+
+.card{
+    background-color: #404040!important;
+}
+
+.card-header{
+    background-color: #353030!important;
+    width: 100%;
+}
+
+.card-header p{
+    color: #FFEFEF;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bolder;
+}
+
+.entete{
+    background-color: #138A37!important;
+    color: #FFEFEF!important;
+    text-transform: uppercase;
+}
+
+.table{
+    width: 100%!important;
+}

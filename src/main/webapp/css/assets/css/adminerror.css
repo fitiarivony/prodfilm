@@ -1,0 +1,9 @@
+body{
+    font-family:"Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+    /* background-image: linear-gradient(to right top, #de2525, #e4252a, #eb2530, #f12635, #f7263b, #fa3745, #fd444f, #ff5059, #fe666a, #fc797a, #f98a8b, #f49b9b); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+    background-image: url('../../images/error.jpg');
+    background-position: center center;
+}

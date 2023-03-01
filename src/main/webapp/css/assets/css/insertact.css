@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #404040;
+}
+
+
+.title{
+    text-align: center;
+    letter-spacing: 0.1px;
+    font-size: 100%;
+    transition: 0.5s linear all;
+    color: #FFEFFA!important;
+    font-weight: bolder!important;
+}
+
+.form{
+    letter-spacing: 0.1px;
+    font-size: 100%;
+    transition: 0.5s linear all;
+    color: #FFEFFA!important;
+    font-weight: bolder!important;
+}
+
+.validationBtn{
+    background-color: #138A37;
+    color: #FFEFFA;
+}
+
+.AddBtn{
+    background-color: #54a56b;
+    color: #FFEFFA;
+    width: 50%;
+}
+
+
+.card{
+    background-color: #353030!important;
+}
+
+.card-header{
+    background-color: #353030!important;
+    width: 100%;
+}
+
+.card-header p{
+    color: #FFEFEF;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bolder;
+}
+
+.card-body{
+    color: #FFEFEA;
+}
+
+
+.form-control{
+    background-color: transparent!important;
+    color: #FFEFEF!important;
+}
+
+option{
+    background-color: #404040!important;
+}
